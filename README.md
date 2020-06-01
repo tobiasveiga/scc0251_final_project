@@ -1,8 +1,8 @@
 # scc0251 - Final Project : Segmentation of Handwritten Notes for Fast Flash Card Generation
 
-Author: Tobias Mesquita Silva da Veiga
+Author: Tobias Mesquita Silva da Veiga, 5268356
 
-This is my final project of the Image Processing lectures lectioned at the ICMC-USP in 2020.01.
+This is my final project of the Image Processing lectures taught at the ICMC-USP in 2020.01.
 
 ## Abstract
 
