@@ -1,4 +1,4 @@
-# scc0251 - Final Project : Segmentation of Handwritten Notes to Generate Flash Cards
+# scc0251 - Final Project : Segmentation of Handwritten Notes for Fast Flash Card Generation
 
 This is my final project of the Image Processing lectures lectioned at the ICMC-USP in 2020.01.
 
