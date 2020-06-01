@@ -1,4 +1,4 @@
-# scc0251 - Final Project : Segmentation of Handwritten Notes for Fast Flash Card Generation
+# scc0251 - Final Project : Segmentation of Handwritten Notes for Fast Flashcard Generation
 
 Author: Tobias Mesquita Silva da Veiga, 5268356
 
