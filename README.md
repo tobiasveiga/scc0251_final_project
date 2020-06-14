@@ -28,8 +28,8 @@ Below are some examples of handwritten notes with highlighted content that the a
 
 1) Blurring the image (for better thresholdind)
 2) Grayscale transformation
-3) Thresholding: adaptative gaussian threshold. Global thresholding was not interensting since in study enviroments, light sources and shadows can make the notebook paper have a large range of brightness for the whole content.
-4) Closing: this one is essential to fill in the gaps that were created afterthresholding.
+3) Thresholding: adaptative gaussian thresholding. Global thresholding was not interesting since in study enviroments, light sources and shadows can make the notebook paper have a large range of brightness for the whole content.
+4) Closing: this one is essential to fill in the gaps that were created after thresholding.
 5) Findding contours: cv2.findContours function is used.
 6) Filling countours with a minimum pixel área.
 
