@@ -55,7 +55,7 @@ The method in more details goes as the following.
 
 
 ## Results
-The proposed algorithm worked very well for blanked background. For the backgrounds with blue lines, results were much worse especially if the blue colour was selected for highliht because it was to discrimante blue highlight from the background lines.
+The proposed algorithm worked very well for blanked background. For the backgrounds with blue lines, results were much worse especially if the blue colour was selected for highliht, because it was hard to discrimante the blue highlight from the background lines.
 
 **Red color - Blank background**
 
