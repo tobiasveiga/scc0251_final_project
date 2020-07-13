@@ -39,9 +39,9 @@ The method in more details goes as the following.
 
 **2) Grayscale transformation:** From the blurred image a grayscale image was generated
 
-**3) Thresholding:** Adaptative gaussian thresholding ws applied to the grayscale image. Global thresholding was not interesting since in study enviroments, light sources and shadows can make the notebook paper have a large range of brightness for the whole content. The idea here was to get all possible visible lines. This method worked very well for detecting most of what can be perceived as line. Unfornatelly a few important lines started to fade and not look connected anymore
+**3) Thresholding:** Adaptative gaussian thresholding was applied to the grayscale image. Global thresholding was not interesting since in study enviroments, light sources and shadows can make the notebook paper have a large range of brightness for the whole content. The idea here was to get all possible visible lines. This method worked very well for detecting most of what can be perceived as line. Unfornatelly a few important lines started to fade and not look connected anymore
 
-**4) HUE filtering:** The HUE was filtered according to the selected pen color. A HUE range is selected for each pen color and everything that is not in this range is removed. This generated weird images, but was enough for not selecting lines with pen colors that were not selected. Unfornatelly, just like with the precious filter, this one also degenerated some important lines, and even more.
+**4) HUE filtering:** The HUE was filtered according to the selected pen color. A HUE range is selected for each pen color and everything that is not in this range is removed. This generated weird images, but was enough for not selecting lines with pen colors that were not selected. Unfornatelly, just like with the previous filter, this one also degenerated some important lines, and even more than the one before.
 
 **5) Combining + Dilation:** Both the grayscale thresholded image and the HUE filtered image are binary images which allow us to apply binary operations. In this case, a new binary image was created by applying the AND operation with both binary images. This new image contains de desired contour but has contour is degenerated because it contains many holes. Also there are many fragments of other image objects that may be too close to the desired contour. The image was dilated to fix some holes.
 
@@ -83,7 +83,14 @@ Extremely hard scenario.
 <img src="images/blue_hard.jpg" width="1000">
 
 ## Conclusions
+Regarding the results, it appears that as long as the highlighting colour is disting from a background, then this algorithm can be effective.
 
+Although some optimization is needed still, specially regarding the filling of the contours. Possible improvements could be done in the beginning of the pipeline, since the blurring might be cause of some lines being degenerated.
 
+Also some algorithms that better connect contour could be used. Unfortunally most of what can be found in the internet about connecting contours is to used Closing and Dilation. For this problem this is not enough.
+
+I also tried to use Hough Transform to detect lines and extend them in a approch to fill the contour holes. It does this well, but is also generate many more fragments and the final segment regions is quite unpleasant to look at.
+
+A different approach would be to get the extremities of the refined contours and try to connect these extremeties using the grayschale thresholded image (contours are more sound in this one). To connect theses points with a minimum path, a BFS algorithm could be used. Some constraints could help the search, such as: not searching were a refined countour point was, allowing to search neighbour pixels with a distance larger than one and limiting the distance of the searched path.
 
 
