@@ -4,7 +4,7 @@ Author: Tobias Mesquita Silva da Veiga, 5268356
 
 This is my final project of the Image Processing lectures taught at the ICMC-USP in 2020.01.
 
-The video presentation can be found in https://youtu.be/0BoqgmwZKSQ
+The video presentation can be found in https://youtu.be/0BoqgmwZKSQ. The video is bit long. I would sugest watching in higher speed and stop watching at 12:11.
 
 
 ## Abstract
