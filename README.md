@@ -4,6 +4,9 @@ Author: Tobias Mesquita Silva da Veiga, 5268356
 
 This is my final project of the Image Processing lectures taught at the ICMC-USP in 2020.01.
 
+The video presentation can be found in https://youtu.be/0BoqgmwZKSQ
+
+
 ## Abstract
 
 The goal here is to create an algorithm capable of 1) receiving real photos of handwritten students notebooks in which blocks of content are highlighted and 2) Returning the segmented region with only the highlighted content (this will be a side of a flashcard), while also 3) using OCR to retrieve textual information that could be used for recommending tags for the flashcard.
